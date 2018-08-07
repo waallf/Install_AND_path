@@ -17,5 +17,7 @@ export CUDA_HOME=/usr/local/cuda-<version>
 export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
 export  PATH=${CUDA_HOME}/bin:${PATH} 
 ```  
+使环境变量立即可用  
+sudo ldconfig  
 
 # 4. nvidia-smi -lms  view gpu 
