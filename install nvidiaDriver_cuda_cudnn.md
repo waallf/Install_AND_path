@@ -27,10 +27,14 @@
 ## 此处有坑  
 1. 下载对应版本的cudnn[连接](https://developer.nvidia.com/cudnn)  
 2. 这里需要下载两个版本（不知道为啥），runtime版和developer版  
-3. 将下载的文件格式改为.tgz，然后解压  
+3. 将下载的文件格式改为.tgz，然后解压，在将里买的压缩包解压，添加环境变量：
+` cd ~`
+`sudo gedit .bashrc`
+`export LD_LIBRARY_PATH=/your/path/to/cudnn/lib64:$LD_LIBRARY_PATH`
 4. 一个里版本里面有头文件(在include文件中)，一个里面有动态连接文件（在lib文件中），将头文件（cudnn.h）拷贝到/usr/local/cuda/lib64  
 5. 复制动态连接库 `sudo cp lib* /usr/local/cuda/lib64/`  
-6. `cd /usr/local/cuda/lib64/`  
+6. `cd /usr/local/cuda/lib64/`
+ 
 7. 对刚考进来的两个动态连接库创建软链接： `sudo ln -s libcudnn.so.7 libcudnn.so`,`sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7`  
 
   
