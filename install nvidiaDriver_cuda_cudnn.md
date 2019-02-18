@@ -3,6 +3,7 @@
 1.查看自己电脑应该安装的驱动器版本 [连接](https://www.nvidia.cn/Download/index.aspx?lang=cn)  
 2.`sudo apt-get install nvidia-390`   
 3.安装完成以后`nvidia-smi`查看是否安装成功  
+[手动安装](https://github.com/alisure-ml/Installation/blob/master/NVIDIA.md)  
 ## install cuda   
 * 安装完nvidia驱动器以后，查看版本对照表 [连接](https://www.cnblogs.com/LearnFromNow/p/9417272.html)  
 
